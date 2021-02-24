@@ -1,8 +1,8 @@
-Introduction
+# ** Introduction **
 
 This guide shows how to create an Ignition configuration to deploy a Fedora CoreOS (FCOS) cloud server instance at Vultr. Ignition files are JSON formatted provisioning instructions that configure storage, file systems, systemd units, networks, users, and other items during the first boot of the system. You must supply an Ignition file in the Vultr customer portal when you deploy an FCOS server. The preferred way to create an Ignition file is by transpiling a Fedora CoreOS Configuration (FCC) file with the Fedora CoreOS Config Transpiler, fcct.
 
-1. Install fcct
+## ** Install fcct **
 
 The fcct utility is available for Linux, macOS, and Windows. Windows users may need to install Gpg4win to verify the file signature.
 
@@ -24,7 +24,7 @@ The fcct utility is available for Linux, macOS, and Windows. Windows users may n
     $ chmod +x fcct-x86_64-pc-windows-gnu
 
 
-2. Create an FCC File
+## ** Create an FCC File ** 
 
 Fedora CoreOS Configuration (FCC) files are in YAML format. 
 
@@ -38,7 +38,7 @@ Fedora CoreOS Configuration (FCC) files are in YAML format.
     Add Private Networking
         10.10.10.10/20
 
-3. Transpile FCC to Ignition
+## 3. Transpile FCC to Ignition
 
 The FCC file must be transpiled to Ignition format before use.
     $ ./fcct-x86_64-pc-windows-gnu -o fedora-host.ign fedora-host.fcc
