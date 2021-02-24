@@ -37,3 +37,8 @@ Fedora CoreOS Configuration (FCC) files are in YAML format.
         Fedora-host
     Add Private Networking
         10.10.10.10/20
+
+3. Transpile FCC to Ignition
+
+The FCC file must be transpiled to Ignition format before use.
+    $ ./fcct-x86_64-pc-windows-gnu -o fedora-host.ign fedora-host.fcc
