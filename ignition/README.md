@@ -32,6 +32,8 @@ Fedora CoreOS Configuration (FCC) files are in YAML format.
         $ touch example.fcc
 
     Add Password to Core User
+        Generated a SHA512 Hash password
     Set Hostname
         Fedora-host
     Add Private Networking
+        10.10.10.10/20
