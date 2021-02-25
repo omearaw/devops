@@ -37,6 +37,8 @@ Fedora CoreOS Configuration (FCC) files are in YAML format.
         Fedora-host
     Add Private Networking
         10.10.10.10/20
+    Create SSH Key on Windows
+        cmd -> ssh-keygen
 
 ## 3. Transpile FCC to Ignition
 
